@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
 
   /* Fundo Hello Kitty */
-  background-image: url("hello\ baby.jpg");
+  background-image: url(https://i.pinimg.com/736x/e3/06/67/e30667a8a2939d7ed0fb354efef1c500.jpg); /* tirei a barra invertida */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,13 +14,25 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* Container central */
 .container {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 25px;
   border-radius: 15px;
   width: 320px;
   text-align: center;
+
+  /* sombra pra destacar */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Título */
+h1 {
+  margin-bottom: 15px;
+}
+
+/* Input */
 input {
   width: 100%;
   padding: 10px;
@@ -29,6 +41,7 @@ input {
   border: 1px solid #ccc;
 }
 
+/* Botão */
 button {
   width: 100%;
   padding: 10px;
@@ -38,26 +51,36 @@ button {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
   background-color: #ff1493;
+  transform: scale(1.05);
 }
 
+/* Mensagem */
 #mensagem {
   color: red;
   margin-top: 10px;
 }
 
+/* Lista (fica logo abaixo do botão) */
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
+/* Itens da lista */
 li {
   background-color: #ffe4f1;
-  padding: 8px;
+  padding: 10px;
   border-radius: 6px;
-  margin-bottom: 6px;
-} 
+  margin-bottom: 8px;
+
+  /* alinhar melhor conteúdo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
